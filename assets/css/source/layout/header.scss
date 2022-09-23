@@ -1,22 +1,42 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis:300,400,500');
-.html {
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+@mixin transition() {
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+html {
     font-family: 'Dosis', sans-serif;
     font-weight: 300;
 }
-.custom-navbar{
-    padding-top: 0em;
+
+.navbar-desktop {
+    padding-top: 0.1em;
+    height: auto;
+    display: flex;
+    align-items: center;
+    align-content: right;
+    justify-items: center;
+    justify-content: right;
 }
-.navbar-links{
+
+.navbar-links {
     float: right;
-    margin-right: 15px;
+    margin-right: 1.5em;
     text-decoration: none;
     text-transform: uppercase;
 }
-.logo{
+
+.logo {
     margin-left: 25px;
     margin-top: 5px;
     display: inline-block;
 }
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -29,50 +49,47 @@ ul {
 li {
     float: left;
     padding: 15px 15px;
-    div {
+
+    .link {
         display: block;
         color: white;
         text-align: center;
         text-decoration: none;
         letter-spacing: 2px;
         font-size: 12px;
+        @include transition();
 
-        -webkit-transition: all 0.3s ease-in;
-        -moz-transition: all 0.3s ease-in;
-        -ms-transition: all 0.3s ease-in;
-        -o-transition: all 0.3s ease-in;
-        transition: all 0.3s ease-in;
-        :hover {
+        &:hover {
             color: #ffcb39;
         }
     }
 }
+
 .dropdown {
     float: left;
     overflow: hidden;
-    button:hover {
-        color: #ffcb39;
-        -webkit-transition: all 0.3s ease-in;
-        -moz-transition: all 0.3s ease-in;
-        -ms-transition: all 0.3s ease-in;
-        -o-transition: all 0.3s ease-in;
-        transition: all 0.3s ease-in;
+
+    .dropbtn {
+        border: none;
+        outline: none;
+        color: white;
+        display: block;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        letter-spacing: 2px;
+        font-size: 12px;
+        text-transform: uppercase;
+        background-color: inherit;
+        font-family: inherit;
+        /* Important for vertical align on mobile phones */
+        margin: 0;
+        /* Important for vertical align on mobile phones */
     }
-}
-.dropdown .dropbtn {
-    border: none;
-    outline: none;
-    color: white;
-    display: block;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    letter-spacing: 2px;
-    font-size: 12px;
-    text-transform: uppercase;
-    background-color: inherit;
-    font-family: inherit; /* Important for vertical align on mobile phones */
-    margin: 0; /* Important for vertical align on mobile phones */
+
+    &:hover .dropdown-content {
+        display: block;
+    }
 }
 
 .dropdown-content {
@@ -82,6 +99,7 @@ li {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 3;
+
     a {
         float: none;
         color: black;
@@ -89,12 +107,10 @@ li {
         text-decoration: none;
         display: block;
         text-align: left;
-        :hover {
+
+        &:hover {
             color: black;
             background-color: rgb(190, 190, 190);
         }
     }
 }
-.dropdown:hover .dropdown-content {
-    display: block;
-  } 

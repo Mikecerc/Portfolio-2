@@ -1,0 +1,20 @@
+.footer-desktop {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+}
+
+.social-footer-icons {
+    color: white;
+    font-size: 20px;
+    padding: 0px 15px;
+
+    .fa:hover {
+        color: #4a4a4a;
+        transition: color 0.3s ease-in;
+    }
+}

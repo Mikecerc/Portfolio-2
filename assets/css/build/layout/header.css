@@ -1,16 +1,23 @@
 @import url("https://fonts.googleapis.com/css?family=Dosis:300,400,500");
-.html {
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+html {
   font-family: "Dosis", sans-serif;
   font-weight: 300;
 }
 
-.custom-navbar {
-  padding-top: 0em;
+.navbar-desktop {
+  padding-top: 0.1em;
+  height: auto;
+  display: flex;
+  align-items: center;
+  align-content: right;
+  justify-items: center;
+  justify-content: right;
 }
 
 .navbar-links {
   float: right;
-  margin-right: 15px;
+  margin-right: 1.5em;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -34,7 +41,7 @@ li {
   float: left;
   padding: 15px 15px;
 }
-li div {
+li .link {
   display: block;
   color: white;
   text-align: center;
@@ -47,7 +54,7 @@ li div {
   -o-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
-li div :hover {
+li .link:hover {
   color: #ffcb39;
 }
 
@@ -55,15 +62,6 @@ li div :hover {
   float: left;
   overflow: hidden;
 }
-.dropdown button:hover {
-  color: #ffcb39;
-  -webkit-transition: all 0.3s ease-in;
-  -moz-transition: all 0.3s ease-in;
-  -ms-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
-}
-
 .dropdown .dropbtn {
   border: none;
   outline: none;
@@ -76,8 +74,13 @@ li div :hover {
   font-size: 12px;
   text-transform: uppercase;
   background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
+  font-family: inherit;
+  /* Important for vertical align on mobile phones */
+  margin: 0;
+  /* Important for vertical align on mobile phones */
+}
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 .dropdown-content {
@@ -96,13 +99,9 @@ li div :hover {
   display: block;
   text-align: left;
 }
-.dropdown-content a :hover {
+.dropdown-content a:hover {
   color: black;
   background-color: rgb(190, 190, 190);
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
 }
 
 /*# sourceMappingURL=header.css.map */

@@ -11,6 +11,10 @@ body {
   font-family: "Dosis", sans-serif;
   font-weight: 300;
   position: relative;
+  height: 100vh;
+}
+.page-container::-webkit-scrollbar {
+  display: none;
 }
 
 .page-background {
@@ -23,8 +27,34 @@ body {
   width: 100vw;
 }
 
+.page-content {
+  padding: 0;
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+  height: auto;
+  padding: 1em;
+}
+
 .content {
-  padding-bottom: 2.5rem;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+  align-content: space-between;
+  flex-direction: column;
+  width: 100%;
+}
+
+.footer {
+  position: absolute;
+  overflow: hidden;
+  height: auto;
+  bottom: 20px;
+  width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */

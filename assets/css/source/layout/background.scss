@@ -1,0 +1,70 @@
+.stars {
+    background: url(../../../images/stars.svg);
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: left top;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+}
+
+.glowing_stars {
+    .star {
+        position: absolute;
+        border-radius: 100%;
+        background-color: #fff;
+        width: 3px;
+        height: 3px;
+        opacity: 0.3;
+        will-change: opacity;
+        &:nth-child(1){
+            top: 80%;
+            left: 25%;
+            animation: glow-star 2s infinite ease-in-out alternate 1s;
+        }
+        &:nth-child(2){
+            top: 20%;
+            left: 40%;
+            animation: glow-star 2s infinite ease-in-out alternate 3s;
+        }
+        &:nth-child(3){
+            top: 25%;
+            left: 25%;
+            animation: glow-star 2s infinite ease-in-out alternate 5s;
+        }
+        &:nth-child(4){
+            top: 75%;
+            left: 80%;
+            animation: glow-star 2s infinite ease-in-out alternate 7s;
+        }
+        &:nth-child(5){
+            top: 90%;
+            left: 50%;
+            animation: glow-star 2s infinite ease-in-out alternate 9s;
+        }
+        
+    }
+}
+
+.object_earth_close{
+    z-index: 1;
+    position: fixed;
+    top: 25%;
+    left: 15%;
+   animation: spin-earth 400s infinite linear both;
+}
+
+.object_moon_close{
+    z-index: 1;
+    position: fixed;
+    top: 26%;
+    left: 56%;
+/*
+    transform: rotate(0deg);
+    transition: transform ease-in 99999999999s;
+*/
+}
+
+@-moz-keyframes spin-earth { 100% { -moz-transform: rotate(-360deg); transition: transform 20s;  } }
+@-webkit-keyframes spin-earth { 100% { -webkit-transform: rotate(-360deg); transition: transform 20s;  } }
+@keyframes spin-earth{ 100% { -webkit-transform: rotate(-360deg); transform:rotate(-360deg); transition: transform 20s; } }
