@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "scripts": {
+    "cssBuild": "sass --watch assets/css/source/:assets/css/build",
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "nuxt": "3.0.0-rc.11"
+  }
+}
