@@ -1,11 +1,9 @@
 .footer-desktop {
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: auto;
-    width: 100%;
+    margin: auto;
 }
 
 .social-footer-icons {

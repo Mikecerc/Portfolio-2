@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "cssBuild": "sass --watch assets/css/source/:assets/css/build",
+    "cssBuild": "sass --no-source-map --watch assets/css/source/:assets/css/build",
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",

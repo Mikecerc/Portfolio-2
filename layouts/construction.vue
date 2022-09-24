@@ -21,10 +21,6 @@
                         <div class="star"></div>
                         <div class="star"></div>
                     </div>
-                    <div class="earth-moon">
-                        <img class="object_earth_close" src="../assets/images/earth.svg" width="30%" />
-                        <img class="object_moon_close" src="../assets/images/moon.svg" width="23%" />
-                    </div>
                 </div>
             </div>
         </div>

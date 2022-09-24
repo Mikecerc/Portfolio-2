@@ -2,7 +2,7 @@ body {
   margin: 0;
 }
 
-.page-container {
+html {
   overflow: hidden;
   scrollbar-width: none;
   overflow-y: scroll;
@@ -10,43 +10,33 @@ body {
   width: 100%;
   font-family: "Dosis", sans-serif;
   font-weight: 300;
-  position: relative;
-  height: 100vh;
 }
-.page-container::-webkit-scrollbar {
+html::-webkit-scrollbar {
   display: none;
 }
 
-.page-background {
-  background: url(../../images/bg_purple.png);
-  background-repeat: repeat-x;
-  background-size: auto;
-  background-position: left top;
-  position: fixed;
-  height: 100vh;
-  width: 100vw;
+.page {
+  position: relative;
+  min-height: 100vh;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 2.5rem;
 }
 
 .page-content {
   padding: 0;
   width: 100%;
+  position: relative;
 }
 
 .header {
   width: 100%;
   height: auto;
   padding: 1em;
-}
-
-.content {
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-  justify-items: center;
-  align-items: center;
-  align-content: space-between;
-  flex-direction: column;
-  width: 100%;
 }
 
 .footer {
@@ -56,5 +46,3 @@ body {
   bottom: 20px;
   width: 100%;
 }
-
-/*# sourceMappingURL=main.css.map */

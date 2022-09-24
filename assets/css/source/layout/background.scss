@@ -2,11 +2,18 @@
     background: url(../../../images/stars.svg);
     background-repeat: repeat;
     background-size: contain;
-    background-position: left top;
-    position: fixed;
-    height: 100vh;
-    width: 100vw;
+    background-position: left top;  
+    position: relative;
 }
+.page-background {
+    background: url(../../../images/bg_purple.png);
+    background-repeat: repeat-x;
+    background-size: auto;
+    background-position: left top;
+    height: 100%;
+    width: 100%;
+}
+
 
 .glowing_stars {
     .star {

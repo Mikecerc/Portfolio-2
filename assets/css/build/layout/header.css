@@ -6,7 +6,7 @@ html {
 }
 
 .navbar-desktop {
-  padding-top: 0.1em;
+  padding-top: 0rem;
   height: auto;
   display: flex;
   align-items: center;
@@ -103,5 +103,3 @@ li .link:hover {
   color: black;
   background-color: rgb(190, 190, 190);
 }
-
-/*# sourceMappingURL=header.css.map */

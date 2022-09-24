@@ -7,7 +7,7 @@
                         <BaseHeader />
                     </div>
                     <div class="page-content">
-                        <slot />
+                        <Views404 />
                     </div>
                     <div class="footer">
                         <BaseFooter />
@@ -21,14 +21,20 @@
                         <div class="star"></div>
                         <div class="star"></div>
                     </div>
-                    <div class="earth-moon">
-                        <img class="object_earth_close" src="../assets/images/earth.svg" width="30%" />
-                        <img class="object_moon_close" src="../assets/images/moon.svg" width="23%" />
-                    </div>
                 </div>
             </div>
         </div>
     </div>
 </template>
 <style>
+@import "./assets/css/build/pages/404.css";
 </style>
+<script setup lang="ts">
+useHead({
+    title: "404 Not Found",
+});
+const props = defineProps({
+    error: Object,
+});
+const handleError = () => clearError({ redirect: "/" });
+</script>
