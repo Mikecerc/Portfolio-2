@@ -1,0 +1,9 @@
+.games-button {
+  color: white;
+  text-decoration: none;
+  border: 3px solid white;
+  padding: 5px 10px;
+}
+.games-button:hover {
+  background-color: rgb(50, 50, 50);
+}
