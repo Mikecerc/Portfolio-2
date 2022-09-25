@@ -87,6 +87,7 @@
         top: 75%;
         pointer-events: none;
         animation: rocket-movement 200s linear infinite both running;
+        width: 5%
     }
     
     .object_earth{
@@ -94,6 +95,7 @@
         top: 20%;
         left: 15%;
         z-index: 90;
+        width: 10%;
     /*    animation: spin-earth 100s infinite linear both;*/
     }
     
@@ -101,6 +103,7 @@
         position: absolute;
         top: 12%;
         left: 25%;
+        width: 10%;
     /*
         transform: rotate(0deg);
         transition: transform ease-in 99999999999s;
@@ -117,6 +120,7 @@
         right: 20%;
         will-change: transform;
         animation: move-astronaut 50s infinite linear both alternate;
+
     }
     
     .text_404{
@@ -132,4 +136,15 @@
         pointer-events: none;
         font-size: 140%;
         color: white;
+    }
+    @media screen and (max-width: 600px) {
+        .box_astronaut {
+            top: 70%;
+            width: 20%;
+        }
+    }
+    @media screen and (min-width: 600px) {
+        .object_astronaut {
+            width: 100px;
+        }
     }
