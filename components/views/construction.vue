@@ -6,13 +6,13 @@
         <nuxtLink to="/" class="btn-go-home" target="_self">GO BACK HOME</nuxtLink>
     </div>
     <div class="objects">
-        <img class="object_rocket" src="../../assets/images/rocket.svg" width="40px" />
+        <img class="object_rocket" src="../../assets/images/rocket.svg"/>
         <div class="earth-moon">
-            <img class="object_earth" src="../../assets/images/earth.svg" width="100px" />
-            <img class="object_moon" src="../../assets/images/moon.svg" width="80px" />
+            <img class="object_earth" src="../../assets/images/earth.svg"/>
+            <img class="object_moon" src="../../assets/images/moon.svg"/>
         </div>
         <div class="box_astronaut">
-            <img class="object_astronaut" src="../../assets/images/astronaut.svg" width="140px" />
+            <img class="object_astronaut" src="../../assets/images/astronaut.svg"/>
         </div>
     </div>
     </div>
