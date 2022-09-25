@@ -1,6 +1,16 @@
 @import "./_content";
+@mixin transition() {
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
 body {
     margin: 0;
+}
+* {
+    box-sizing: border-box;
 }
 html {
     overflow: hidden;

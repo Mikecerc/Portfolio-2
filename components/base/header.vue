@@ -28,32 +28,50 @@
             </div>
         </nav>
         <nav class="navbar-mobile">
-            <ul v-show="menuOut == true" class="mobile-navbar-container">
-                <li>
-                    <div><nuxtLink @click="showMenu()" class="link" to="/">Home</nuxtLink></div>
-                </li>
-                <li>
-                    <div><nuxtLink @click="showMenu()" class="link" to="/projects">Projects</nuxtLink></div>
-                </li>
-                <li>
-                    <div class="dropdown">
-                        <button class="dropbtn" @click="openDropdown()">Documentation<i class="fa fa-caret-down"></i></button>
-                        <div class="dropdown-content" v-show="dropOut == true">
-                            <div><nuxtLink to="/docs/batteryLog" @click="showMenu()">Digital Battery Logging (frc)</nuxtLink></div>
-                            <div><nuxtLink to="/docs/batteryMonitoring" @click="showMenu()">Automated Battery Monitoring</nuxtLink></div>
-                            <div><nuxtLink to="/docs/discordBots" @click="showMenu()">Discord Bots</nuxtLink></div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div><nuxtLink class="link" to="/aboutMe" @click="showMenu()">about Me</nuxtLink></div>
-                </li>
-            </ul>
-
-            <button class="mobile-main-dropdown" @click="showMenu()">
-                <i v-show="menuOut == false" class="fa fa-bars"></i>
-                <i v-show="menuOut == true" class="fa fa-times"></i>
-            </button>
+            <transition name="mobile-navbar">
+                <ul v-show="menuOut == true" class="mobile-navbar-link-container">
+                    <li>
+                        <div><nuxtLink @click="showMenu()" class="link" to="/">Home</nuxtLink></div>
+                    </li>
+                    <li>
+                        <div><nuxtLink @click="showMenu()" class="link" to="/projects">Projects</nuxtLink></div>
+                    </li>
+                    <li class="dropdown">
+                        <button class="dropbtn" @click="openDropdown()">
+                            Documentation<i :class="{ 'fa fa-caret-down': dropOut == true, 'fa fa-caret-right': dropOut == false }"></i>
+                        </button>
+                    </li>
+                    <transition name="mobile-dropdown-item">
+                        <ul class="mobile-dropdown-items-container" v-show="dropOut == true">
+                            <li>
+                                <div>
+                                    <nuxtLink to="/docs/batteryLog" class="link drop" @click="showMenu()"
+                                        >Digital Battery Logging (frc)</nuxtLink
+                                    >
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <nuxtLink to="/docs/batteryMonitoring" class="link drop" @click="showMenu()"
+                                        >Automated Battery Monitoring</nuxtLink
+                                    >
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <nuxtLink to="/docs/discordBots" class="link drop" @click="showMenu()">Discord Bots</nuxtLink>
+                                </div>
+                            </li>
+                        </ul>
+                    </transition>
+                    <li>
+                        <div><nuxtLink class="link" to="/aboutMe" @click="showMenu()">about Me</nuxtLink></div>
+                    </li>
+                </ul>
+            </transition>
+            <div class="mobile-main-dropdown" @click="showMenu()" :class="{ open: menuOut == true }">
+                <span class="menu-bars"></span>
+            </div>
         </nav>
     </div>
 </template>
@@ -67,7 +85,7 @@ let dropOut: Ref<boolean> = ref(false);
 function showMenu(): void {
     menuOut.value = !menuOut.value;
 }
-function openDropdown() {   
+function openDropdown() {
     dropOut.value = !dropOut.value;
 }
 </script>
