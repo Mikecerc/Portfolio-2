@@ -14,7 +14,7 @@
             </p>
             <br />
             <p>
-                Besides electronics, I also tinker with programming. Currently I have some experience with javascript (including node.js), typescript, python,
+                Besides electronics, I also enjoy programming. Currently I have some experience with javascript (including node.js), typescript, python,
                 html, css, sass, vuejs, nuxtjs, java, and c++/arduino, although I'm still learning. I'm currently, however, most comfortable
                 with javascript and typescript.
             </p>
