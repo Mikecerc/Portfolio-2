@@ -124,7 +124,7 @@ li .link:hover {
   transition: 0.4s ease-in-out;
   position: absolute;
   z-index: 12;
-  right: 0;
+  right: 4vw;
   top: 6vh;
 }
 
@@ -176,7 +176,8 @@ li .link:hover {
   z-index: 10;
   flex-direction: column;
   position: absolute;
-  right: 0;
+  right: 1vw;
+  top: 4vh;
   padding: 4em 0;
 }
 .mobile-navbar-link-container .drop {
@@ -205,7 +206,7 @@ li .link:hover {
 }
 
 .mobile-navbar-enter-to {
-  transform: translateX(0px);
+  transform: translateX(0vw);
 }
 
 .mobile-dropdown-items-container {

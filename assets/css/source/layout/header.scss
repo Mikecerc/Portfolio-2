@@ -132,7 +132,7 @@ li {
     transition: 0.4s ease-in-out;
     position: absolute;
     z-index: 12;
-    right: 0;
+    right: 4vw;
     top: 6vh;
 }
 
@@ -188,7 +188,8 @@ li {
     z-index: 10;
     flex-direction: column;
     position: absolute;
-    right: 0;
+    right: 1vw;
+    top: 4vh;
     padding: 4em 0;
     .drop {
         color:rgb(180, 176, 176);
@@ -205,7 +206,7 @@ li {
     transform: translateX(110vw);
 }
 .mobile-navbar-enter-to {
-    transform: translateX(0px);
+    transform: translateX(0vw);
 }
 
 .mobile-dropdown-items-container {
