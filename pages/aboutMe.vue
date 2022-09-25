@@ -9,7 +9,7 @@
             </p>
             <br />
             <p>
-                I'm currently a senior in High School and am the lead of the frc team
+                I'm currently a senior in High School and am the lead of the FRC team
                 <a style="color: white;" href="https://lightningrobotics.com" target="_blank">862</a>'s electrical subgroup
             </p>
             <br />

@@ -133,7 +133,7 @@ li {
 
 .mobile-main-dropdown {
     position: absolute;
-    right: 20px;
+    right: 10%;
     top: 20px;
     background: transparent;
     border: 0;
@@ -145,8 +145,8 @@ li {
     ul {
         text-transform: uppercase;
         position: absolute;
-        right: 5px;
-        top: 10px;
+        right: 10%;
+        top: 1%;
         background: rgba(0, 0, 0, 0.8);
         display: flex;
         justify-content: center;
@@ -158,8 +158,4 @@ li {
         z-index: 10;
         flex-direction: column;
     }
-}
-.spacer {
-    width: 100px;
-    height: 100px;
 }

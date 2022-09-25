@@ -71,3 +71,9 @@ html::-webkit-scrollbar {
   bottom: 20px;
   width: 100%;
 }
+
+@media screen and (max-width: 600px) {
+  .header {
+    padding-bottom: 4em;
+  }
+}
