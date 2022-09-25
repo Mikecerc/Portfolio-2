@@ -11,7 +11,7 @@
         <div>
             <nuxtLink to="/resume" class="social-footer-icons"><i class="fa fa-file-word-o" aria-hidden="true"></i></nuxtLink>
         </div>
-        <div>
+        <div class="gamesLink">
             <nuxtLink to="/gamesPage" class="social-footer-icons"><i class="fa fa-gamepad" aria-hidden="true"></i></nuxtLink>
         </div>
     </div>
