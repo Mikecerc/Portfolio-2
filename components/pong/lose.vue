@@ -1,11 +1,17 @@
 <template>
-    <div id="lose" style="display: none">
+    <div id="lose">
         <div class="card">
             <h2>You Lose!</h2>
             <div class="flex">
-                <div><a class="end-link" href="./pong.html" target="_self">Play Again</a></div>
-                <div><a class="end-link" href="../games.html" target="_self">Go back</a></div>
+                <div><a class="end-link" @click="resetGame()">Play Again</a></div>
+                <div><nuxtLink class="end-link" to="/gamesPage">Go back</nuxtLink></div>
             </div>
         </div>
     </div>
 </template>
+<style>
+    @import "../../assets/css/build/pages/games/pong.css";
+</style>
+<script setup lang="ts">
+    import { resetGame } from '~~/pages/games/pongLogic';
+</script>

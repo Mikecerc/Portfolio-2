@@ -10,5 +10,4 @@
     </div>
 </template>
 <style>
-@import "../assets/css/build/pages/index.css";
 </style>

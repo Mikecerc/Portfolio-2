@@ -4,18 +4,15 @@
             <h1 class="projects-header">Projects</h1>
             <div class="flex-container">
                 <div class="project-spacer"></div>
-                <div class="button">
-                    <button class="project-button project-button-selected" @click="handleClick(0)">Digital Battery Log</button>
-                </div>
-                <div class="button">
-                    <button class="project-button project-button-deselected" @click="handleClick(1)">Battery Monitoring</button>
-                </div>
-                <div class="button">
-                    <button class="project-button project-button-deselected" @click="handleClick(2)">Discord bots</button>
-                </div>
-                <div class="button">
-                    <button class="project-button project-button-deselected" @click="handleClick(3)">Electronic fireworks display</button>
-                </div>
+
+                <button class="project-button project-button-selected" @click="handleClick(0)">Digital Battery Log</button>
+
+                <button class="project-button project-button-deselected" @click="handleClick(1)">Battery Monitoring</button>
+
+                <button class="project-button project-button-deselected" @click="handleClick(2)">Discord bots</button>
+
+                <button class="project-button project-button-deselected" @click="handleClick(3)">Electronic fireworks display</button>
+
                 <div class="project-spacer"></div>
             </div>
             <div id="batteryLog" v-if="project == 0">
@@ -58,7 +55,7 @@ const handleClick = (button) => {
             ary.push(element[1].firstElementChild);
         }
     });
-    ary.forEach((e, index) => {
+    document.querySelectorAll(".flex-container button").forEach((e, index) => {
         e.classList.remove("project-button-selected");
         e.classList.add("project-button-deselected");
         if (index == button) {

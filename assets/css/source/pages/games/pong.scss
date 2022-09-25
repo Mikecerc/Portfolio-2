@@ -1,0 +1,110 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+* {
+    --hue:200;
+    --saturation: 50%;
+    --foreground-color: hsl(var(--hue), var(--saturation), 75%);
+    --background-color: hsl(var(--hue), var(--saturation), 20%);
+
+}
+
+
+.paddle {
+    --position: 50;
+    position: absolute;
+    background-color: var(--foreground-color);
+    top: calc(var(--position) * 1vh);
+    transform: translateY(-50%);
+    width: 1vh;
+    height: 10vh;
+}
+
+.paddle.left {
+    left: 1vw
+}
+
+.paddle.right {
+    right: 1vw
+}
+
+.ball {
+    --x: 50;
+    --y: 50;
+
+    position: absolute;
+    background-color: var(--foreground-color);
+    left: calc(var(--x) * 1vw);
+    top: calc(var(--y) * 1vh);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    width: 2.5vh;
+    height: 2.5vh; 
+}
+
+.score {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 7vh;
+    color: var(--foreground-color);
+}
+
+.score > * {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 0 2vh;
+    margin: 1vh 0;
+    opacity: .5;
+}
+
+.score > :first-child {
+    text-align: right;
+    border-right:  .5vh solid var(--foreground-color);
+} 
+
+.home-button-text {
+    font-size: 24px;
+    right: 5%;
+    position: absolute;
+    top: 2%;
+    color: var(--foreground-color);
+    border: 3px solid var(--foreground-color);
+    text-decoration: none;
+    padding: 0.5rem 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.flex {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    gap: 15px
+}
+
+.button {
+    background-color: transparent;
+    color: white;
+    height: 40px;
+    width: 100px;
+    border: 3px solid white;
+}
+.button:hover {
+    background-color: rgba(100,100,100,100);
+}
+
+.button-selected {
+    background-color: rgba(100,100,100,100);  
+}
+.end-link {
+    color: white;
+    text-decoration: none;
+    border: 3px solid white;
+    padding: 2px 5px
+}
+.end-link:hover {
+    background-color: rgba(100,100,100, 40);
+}
