@@ -102,14 +102,18 @@ li {
         margin: 0;
         /* Important for vertical align on mobile phones */
     }
-
-    &:hover .dropdown-content {
-        display: block;
+    @media screen and (min-width: 600px) {
+        &:hover .dropdown-content {
+            display: block;
+        }
     }
+    
 }
 
 .dropdown-content {
-    display: none;
+    @media screen and (min-width: 600px) {
+        display: none;
+    }
     position: absolute;
     background-color: white;
     min-width: 160px;
@@ -132,9 +136,6 @@ li {
 }
 
 .mobile-main-dropdown {
-    position: absolute;
-    right: 0%;
-    top: 20px;
     background: transparent;
     border: 0;
     font-size: 50px;
@@ -142,20 +143,25 @@ li {
     z-index: 12;
 }
 .mobile-navbar-container {
-    ul {
+    background: rgba(0, 0, 0, 0.8);
         text-transform: uppercase;
         position: absolute;
-        right: 10%;
-        top: 1%;
-        background: rgba(0, 0, 0, 0.8);
         display: flex;
         justify-content: center;
         align-content: center;
         justify-items: center;
         align-items: center;
-        width: 15em;
-        height: auto;
+        width: 20em;
+        height: 20em;
         z-index: 10;
         flex-direction: column;
-    }
+    
+}
+.navbar-mobile {
+    display: flex; 
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 20em;
+    float: right;
 }
