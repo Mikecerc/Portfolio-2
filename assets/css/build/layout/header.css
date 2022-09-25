@@ -15,6 +15,22 @@ html {
   justify-content: right;
 }
 
+@media screen and (max-width: 600px) {
+  .navbar-desktop {
+    display: none;
+  }
+  .navbar-mobile {
+    display: block;
+  }
+}
+@media screen and (min-width: 600px) {
+  .navbar-desktop {
+    display: block;
+  }
+  .navbar-mobile {
+    display: none;
+  }
+}
 .navbar-links {
   float: right;
   margin-right: 1.5em;
@@ -102,4 +118,37 @@ li .link:hover {
 .dropdown-content a:hover {
   color: black;
   background-color: rgb(190, 190, 190);
+}
+
+.mobile-main-dropdown {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background: transparent;
+  border: 0;
+  font-size: 50px;
+  color: rgb(190, 190, 190);
+  z-index: 12;
+}
+
+.mobile-navbar-container ul {
+  text-transform: uppercase;
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  width: 15em;
+  height: auto;
+  z-index: 10;
+  flex-direction: column;
+}
+
+.spacer {
+  width: 100px;
+  height: 100px;
 }

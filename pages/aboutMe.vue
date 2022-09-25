@@ -14,7 +14,7 @@
             </p>
             <br />
             <p>
-                Besides electronics, I also tinker with programming. Currently I have some experience with javascript, typescript, python,
+                Besides electronics, I also tinker with programming. Currently I have some experience with javascript (including node.js), typescript, python,
                 html, css, sass, vuejs, nuxtjs, java, and c++/arduino, although I'm still learning. I'm currently, however, most comfortable
                 with javascript and typescript.
             </p>
@@ -29,6 +29,7 @@
             </p>
             <img
                 src="https://github-readme-stats.vercel.app/api?username=mikecerc&show_icons=true&theme=dracula&count_private=true&title_color=5f356b"
+                style="padding: 20px;"
             />
             <img
                 src="https://github-readme-stats.vercel.app/api/top-langs/?username=mikecerc&show_icons=true&theme=dracula&count_private=true&title_color=5f356b&layout=compact"
@@ -42,3 +43,6 @@
         </div>
     </div>
 </template>
+<style>
+    @import "../assets/css/build/pages/aboutMe.css"
+</style>
