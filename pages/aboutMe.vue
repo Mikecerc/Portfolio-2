@@ -5,7 +5,7 @@
             <p>
                 Hey, I'm Michael. I tinker with various electronics and programming languages. Electrical engineering is my passion and I've
                 made / am working on a lot of cool projects, which you can check out
-                <a href="./projects.html" style="color: white">here</a>.
+                <nuxtLink to="/projects" style="color: white">here</nuxtLink>.
             </p>
             <br />
             <p>
@@ -35,10 +35,10 @@
             />
             <br />
             <h4 style="text-align: left; padding-left: 80px">Resume</h4>
-            <p>If you would like to view my resume you may do so by clicking <a href="./resume.html">here</a>.</p>
+            <p>If you would like to view my resume you may do so by clicking <nuxtLink to="/resume">here</nuxtLink>.</p>
             <br />
             <h4 style="text-align: left; padding-left: 80px">Contact Me</h4>
-            <p>If you have any questions or inquiries, feel free to reach out by <a href="./contact.html">emailing me</a>.</p>
+            <p>If you have any questions or inquiries, feel free to reach out by <nuxtLink to="/contact">emailing me</nuxtLink>.</p>
         </div>
     </div>
 </template>
