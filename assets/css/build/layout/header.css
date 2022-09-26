@@ -121,7 +121,7 @@ li .link:hover {
   width: 70px;
   height: 60px;
   cursor: pointer;
-  transition: 0.4s ease-in-out;
+  transition: 0.6s ease-in-out;
   position: absolute;
   z-index: 12;
   right: 4vw;
