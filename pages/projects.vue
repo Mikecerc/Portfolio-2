@@ -18,7 +18,7 @@
             <div id="batteryLog" v-if="project == 0">
                 <h2 style="text-align: left; padding-left: 20px">Digital Battery Logger</h2>
                 <p style="padding: 0px 50px">
-                    Being part of an frc team's electrical subgroup for 4 years, I've picked up on a few things that can be improved. One
+                    Being part of an FRC team's electrical subgroup for 4 years, I've picked up on a few things that can be improved. One
                     thing that our team does is record when we use batteries, along with their stats (internal resistance and state of
                     charge). This practice is generally a good idea, as it allows us to track the usage of a specific battery at a
                     competition so we can avoid using batteries again too quickly. Additionally, we can use this data to express how a
