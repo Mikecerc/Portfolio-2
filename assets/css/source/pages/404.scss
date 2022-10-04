@@ -76,12 +76,12 @@
     }
     
     .objects img{
-        z-index: 90;
+        z-index: 1;
         pointer-events: none;
     }
     
     .object_rocket{
-        z-index: 95;
+        z-index: 2;
         position: absolute;
         transform: translateX(-50px);
         top: 75%;
@@ -94,7 +94,7 @@
         position: absolute;
         top: 20%;
         left: 15%;
-        z-index: 90;
+        z-index: 1;
         width: 10%;
     /*    animation: spin-earth 100s infinite linear both;*/
     }
@@ -114,7 +114,7 @@
     }
     
     .box_astronaut{
-        z-index: 110 !important;
+        z-index: 3 !important;
         position: absolute;
         top: 60%;
         right: 20%;
@@ -125,14 +125,14 @@
     
     .text_404{
         position: relative;
-        z-index: 200;
+        z-index: 4;
         pointer-events: none;
         font-size: 400%;
         color: white;
     }
     .subtext_404{
         position: relative;
-        z-index: 200;
+        z-index: 4;
         pointer-events: none;
         font-size: 140%;
         color: white;
