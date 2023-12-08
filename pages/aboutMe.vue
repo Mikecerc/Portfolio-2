@@ -9,14 +9,15 @@
             </p>
             <br />
             <p>
-                I'm currently a senior in High School and am the lead of the FRC team
+                I'm currently a sophomore in Collage and am the former lead of the FRC team
                 <a style="color: white;" href="https://lightningrobotics.com" target="_blank">862</a>'s electrical subgroup
             </p>
             <br />
             <p>
                 Besides electronics, I also enjoy programming. Currently I have some experience with javascript (including node.js), typescript, python,
                 html, css, sass, vuejs, nuxtjs, java, and c++/arduino, although I'm still learning. I'm currently, however, most comfortable
-                with javascript and typescript.
+                with javascript and typescript. 
+                Additionally I'm familiar with linux, git, github, docker, and proxmox!
             </p>
         </div>
 

@@ -9,14 +9,24 @@
                         <div><nuxtLink class="link" to="/">Home</nuxtLink></div>
                     </li>
                     <li>
-                        <div><nuxtLink class="link" to="/projects">Projects</nuxtLink></div>
+                        <div class="dropdown">
+                            <button class="dropbtn">Projects<i class="fa fa-caret-down"></i></button>
+                            <div class="dropdown-content">
+                                <div><nuxtLink to="/projects/batteryLoggerV1">Digital Battery Logging (frc)</nuxtLink></div>
+                                <div><nuxtLink to="/projects/batteryLoggerV2">Digital Battery Logging (frc) v2</nuxtLink></div>
+                                <div><nuxtLink to="/projects/batteryMonitoring">Automated Battery Monitoring</nuxtLink></div>
+                                <div><nuxtLink to="/projects/discordBots">Discord Bots</nuxtLink></div>
+                                <div><nuxtLink to="/projects/fireworks">Electronic Fireworks Display</nuxtLink></div>
+                                <div><nuxtLink to="/projects/homelab">Homelab</nuxtLink></div>
+
+                            </div>
+                        </div>
                     </li>
                     <li>
                         <div class="dropdown">
                             <button class="dropbtn">Documentation<i class="fa fa-caret-down"></i></button>
                             <div class="dropdown-content">
                                 <div><nuxtLink to="/docs/batteryLog">Digital Battery Logging (frc)</nuxtLink></div>
-                                <div><nuxtLink to="/docs/batteryMonitoring">Automated Battery Monitoring</nuxtLink></div>
                                 <div><nuxtLink to="/docs/discordBots">Discord Bots</nuxtLink></div>
                             </div>
                         </div>
@@ -79,7 +89,7 @@
 @import "../../assets/css/build/layout/header.css";
 </style>
 <script setup lang="ts">
-import { Ref } from "vue";
+import type { Ref } from "vue";
 let menuOut: Ref<boolean> = ref(false);
 let dropOut: Ref<boolean> = ref(false);
 function showMenu(): void {

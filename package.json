@@ -8,7 +8,7 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
-  "devDependencies": {
-    "nuxt": "3.0.0-rc.11"
+  "dependencies": {
+    "nuxt": "^3.5.3"
   }
 }

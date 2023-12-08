@@ -1,4 +1,4 @@
-.card {
+.card, .card--dark {
   z-index: 2;
   position: relative;
   box-shadow: 0 0 20px 0;
@@ -13,8 +13,11 @@
   font-size: 24px;
   height: auto;
 }
-.card p {
+.card p, .card--dark p {
   padding: 0 1em;
+}
+.card--dark {
+  backdrop-filter: blur(50px);
 }
 
 .content-wrapper {
