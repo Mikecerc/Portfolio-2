@@ -30,11 +30,12 @@
             </p>
             <img
                 src="https://github-readme-stats.vercel.app/api?username=mikecerc&show_icons=true&theme=dracula&count_private=true&title_color=5f356b"
-                style="padding: 20px;"
+                style="padding: 20px; height: 25vh;"
             />
-            <img
-                src="https://github-readme-stats.vercel.app/api/top-langs/?username=mikecerc&show_icons=true&theme=dracula&count_private=true&title_color=5f356b&layout=compact"
+            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mikecerc&langs_count=10&show_icons=true&theme=dracula&count_private=true&title_color=5f356b&layout=compact" 
+            style="height: 30vh; padding: 20px;"
             />
+
             <br />
             <h4 style="text-align: left; padding-left: 80px">Resume</h4>
             <p>If you would like to view my resume you may do so by clicking <nuxtLink style="color: white;" to="/resume">here</nuxtLink>.</p>
